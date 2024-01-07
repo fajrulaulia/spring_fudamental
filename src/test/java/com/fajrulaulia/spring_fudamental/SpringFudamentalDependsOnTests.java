@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.fajrulaulia.spring_fudamental.data.Tikus;
+
 public class SpringFudamentalDependsOnTests {
      private ApplicationContext ctx;
 
@@ -15,6 +17,8 @@ public class SpringFudamentalDependsOnTests {
 
     @Test
     void TestDependsOn(){
+
+        ctx.getBean(Tikus.class);
         
     }
 
